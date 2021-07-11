@@ -1,26 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { OfferslistComponent } from './offerslist/offerslist.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
-import { UserdetailsComponent } from './userdetails/userdetails.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatStepperModule} from '@angular/material/stepper';
-import { InitialstepperComponent } from './initialstepper/initialstepper.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PageComponent } from './page/page.component';
+import { ContentService } from './shared/services/content.service';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { FullpageDirective } from './shared/directives/fullpage.directive';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    OfferslistComponent,
-    UserdetailsComponent,
-    InitialstepperComponent
-   
+    PageComponent,
+    FullpageDirective
   ],
   imports: [
     BrowserModule,
@@ -32,10 +31,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatStepperModule,
     FormsModule,
-    ReactiveFormsModule
-  
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule
+   
   ],
-  providers: [],
+  providers: [ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

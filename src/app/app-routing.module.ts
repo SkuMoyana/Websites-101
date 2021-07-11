@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { OfferslistComponent } from './offerslist/offerslist.component';
+import { PageComponent } from './page/page.component';
+
 
 const routes: Routes = [
-  
-  {path:'offerslist', component : OfferslistComponent}
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'home', component: PageComponent, data: {page: 'home'}},
+  {path: 'about', component: PageComponent, data: {page: 'about'}},
+  {path: 'contact', component: PageComponent, data: {page: 'contact'}},
+  {path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({

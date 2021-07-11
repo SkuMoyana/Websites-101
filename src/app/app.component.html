@@ -1,67 +1,16 @@
-<div class="toolbar" role="banner">
-  <img width="40" alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==" />
-  <span>Welcome</span>
-</div>
+<mat-toolbar color="primary">
+    <h1><span class="light">MOYANA</span></h1>
+    <span class="spacer"></span>
+    <a button mat-button
+[routerLink]="['home']"
+routerLinkActive="active">HOME</a>
+<a button mat-button
+[routerLink]="['about']"
+routerLinkActive="active">OUR SERVICES</a>
+<a button mat-button
+[routerLink]="['contact']"
+routerLinkActive="active">REGISTER</a>
+  </mat-toolbar>
 
 
-<div class="mat-stepper-horizontal">
-  <div id="stepper1" class="bs-stepper">
-    <div class="bs-stepper-header">
-      <div class="step" data-target="#test-l-1">
-        <button class="step-trigger" >
-          <span class="bs-stepper-circle">1</span>
-          <span class="bs-stepper-label">Our Services</span>
-        </button>
-      </div>
-      <div class="line"></div>
-      <div class="step" data-target="#test-l-2">
-        <button class="step-trigger">
-          <span class="bs-stepper-circle">2</span>
-          <span class="bs-stepper-label">Your Details</span>
-        </button>
-      </div>
-      <div class="line"></div>
-      <div class="step" data-target="#test-l-3">
-        <button class="step-trigger">
-          <span class="bs-stepper-circle">3</span>
-          <span class="bs-stepper-label">Connfirmation</span>
-        </button>
-      </div>
-    </div>
-    <div class="bs-stepper-content">
-      <form (ngSubmit)="onSubmit()">
-        <div id="test-l-1" class="content">
-          <app-offerslist></app-offerslist>
-          <button (click)="next()" class="btn btn-primary">Next</button>
-        </div>
-        
-        <div id="test-l-2" class="content">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">First Name</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Last Name</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-            </div>
-          </div>
-          <button (click)="next()" class="btn btn-primary" id = "buttonNext" >Next</button>
-        </div>
-        <div id="test-l-3" class="content text-center">
-          <button type="submit" class="btn btn-primary mt-5">Submit</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-<router-outlet>
-
-</router-outlet>
+<router-outlet></router-outlet>

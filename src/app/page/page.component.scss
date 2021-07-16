@@ -3,10 +3,19 @@
     height: 100%;
     align-items: center;
 }
+  .card{
+      margin-top: 200;
+    
+  }
 
-.mat-card {
+mat-card {
     width:500px;
     background: rgba(197, 194, 194, 0.9);
+    align-items: center;
+    padding: 8px;
+   margin-top: 60px;
+margin-left: 600px;
+
 }
 
 .mat-card-header {
@@ -14,6 +23,13 @@
 }
 
 .mat-card-content {
+   
     padding: 8px;
+}
+.fullBg{
+    z-index:0;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 

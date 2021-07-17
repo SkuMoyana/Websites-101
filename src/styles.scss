@@ -2,7 +2,20 @@
  
 html, app-root {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+ 
+  margin: 0;
 }
+
+
+.footer{
+  position: relative;
+  z-index: 1;
+  overflow-x: auto;
+   display: flex;
+  flex-direction: row;
+ }
+
+ body{
+   display:flex;
+   flex-direction: row;
+ }

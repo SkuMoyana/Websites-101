@@ -13,6 +13,8 @@ import { PageComponent } from './page/page.component';
 import { ContentService } from './shared/services/content.service';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FullpageDirective } from './shared/directives/fullpage.directive';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { FullpageDirective } from './shared/directives/fullpage.directive';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatDividerModule
    
   ],
   providers: [ContentService],

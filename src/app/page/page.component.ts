@@ -14,7 +14,8 @@ export class PageComponent implements OnInit {
     title: 'Home',
     subtitle: 'Welcome Home!',
     content: 'Some home content.',
-    image: 'assets/bg00.jpg'
+    image: 'assets/bg00.jpg',
+    services : []
   };
 
   constructor(private route: ActivatedRoute,
@@ -24,5 +25,12 @@ export class PageComponent implements OnInit {
     const pageData = this.route.snapshot.data['page'];
     this.page = this.contentService.pages[pageData];
   }
+
+  LoadPersonalInfo(){
+    
+    this.page = {title:'Your Information', subtitle : 'Tell us about yourself', content:'Your Info', image:'assets/bg00.jpg', services : []};
+    
+  }
+  
 
 }

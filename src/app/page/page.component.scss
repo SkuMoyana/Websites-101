@@ -1,21 +1,24 @@
 :host {
     display: flex;
-    height: 100%;
-    align-items: center;
 }
-  .card{
-      margin-top: 200;
-    
+.sidebar{
+    width:300px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+   margin-top: 0px;
+margin-left: 0px;
+z-index: 1;
+position:"left";
+top:0;
   }
 
 mat-card {
     width:500px;
-    background: rgba(197, 194, 194, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     align-items: center;
     padding: 8px;
    margin-top: 60px;
-margin-left: 600px;
-
+margin-left: 500px;
 }
 
 .mat-card-header {
@@ -26,6 +29,7 @@ margin-left: 600px;
    
     padding: 8px;
 }
+
 .fullBg{
     z-index:0;
     position: fixed;
@@ -33,3 +37,30 @@ margin-left: 600px;
     left: 0;
 }
 
+.example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  p{
+font-size: 14px;
+text-align: center;
+  }
+
+  h1{
+    font-size: 18px;
+    text-align:center;
+    color: #3f51b5;
+  }
+
+  

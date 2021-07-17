@@ -1,20 +1,130 @@
 <img class="fullBg" appFullpage [src]="page.image">
 
-<div>
-    <p>
-        fffff
-    </p>
-</div>
+<div class="card">
+    <mat-card class="sidebar">
+      <h1>
+        Who we are
+      </h1>
+      <p>
+     nimboAge is a US$14.3 billion technology, engineering, construction and
+     manufacturing and financial services conglomerate. It addresses critical needs in key
+    sectors including infrastructure, construction, hydrocarbon, power, defence and
+    aerospace. Its footprint extends across seven countries in addition to India.
+      </p>
+      <mat-divider></mat-divider>
+      <h1>
+        History
+      </h1>
+
+      <p>
+        The evolution of nimboAge into a major engineering and construction organisation is among
+        the more remarkable success stories in Indian industry. It was founded in Mumbai (then
+        Bombay) in 1938 by two Danish engineers, Henning Holck-Larsen and Soren Kristian
+        Toubro. Beginning with the import of machinery from Europe, L&T took on engineering
+        and construction assignments of increasing sophistication. Today, the company sets
+        engineering benchmarks in terms of scale and complexity
+      </p>
+      <mat-divider></mat-divider>
+      <h1>
+        Corporate Sustainability   
+      </h1>
+
+      <p>
+        nimboAge was the first company in India in the engineering & construction space to publicly
+        disclose its sustainability performance. The Company’s annual Sustainability Reports
+        highlight achievements and objectives across the traditional three ‘Ps’ of Planet, People
+        and Profits. All our Reports are rated A+ by Global Reporting Initiatives, indicating the
+        highest level of disclosure.
+      </p>
+
+      <mat-divider></mat-divider>
+    </mat-card>
+  </div>
+
+
+
 
 <div class="card">
-    <mat-card>
-        <mat-card-header class="mat-card-header">
-        <mat-card-title><h1>{{page.title}}</h1></mat-card-title>
-        <mat-card-subtitle>{{page.subtitle}}</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content class="mat-card-content" >
-        {{page.content}}
-        </mat-card-content>
-        </mat-card>
+    <div *ngIf="page.title==='Our Services'">
+        <mat-card >
+            <mat-card-header class="mat-card-header">
+            <mat-card-title><h1>{{page.title}}</h1></mat-card-title>
+            <mat-card-subtitle>{{page.subtitle}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="mat-card-content" >
+                <mat-selection-list #shoes>
+                    <mat-list-option *ngFor="let service of page.services">
+                        {{service}}
+                        <mat-divider></mat-divider>
+                    </mat-list-option>
+                    
+                  </mat-selection-list>
+            </mat-card-content>
+    
+            <div class="example-button-row">
+                <button mat-raised-button color="accent">Clear Options</button>
+                <button mat-raised-button color="primary" (click) = "LoadPersonalInfo()" >Next</button>
+              </div>
+            </mat-card>    
+           
+    </div>
+
+    <div *ngIf="page.title==='Your Information'">
+        <mat-card >
+            <mat-card-header class="mat-card-header">
+            <mat-card-title><h1>{{page.title}}</h1></mat-card-title>
+            <mat-card-subtitle>{{page.subtitle}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="mat-card-content" >
+                <form class="example-form">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label><span p>First Name</span></mat-label>
+                      <input matInput placeholder="Tony" >
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput placeholder="Moyo" >
+                      </mat-form-field>
+                  
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Phone Number</mat-label>
+                        <input matInput placeholder="Moyo" >
+                      </mat-form-field>
+
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Email Address</mat-label>
+                        <input type="email" matInput placeholder="Moyo" >
+                      </mat-form-field>
+
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Company Name</mat-label>
+                        <input matInput placeholder="Moyo" >
+                      </mat-form-field>
+
+                      <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Address</mat-label>
+                        <textarea matInput placeholder="Ex. 100 Main St"></textarea>
+                      </mat-form-field>
+
+                      
+                  </form>
+            </mat-card-content>
+    
+            <div class="example-button-row">
+                <button mat-raised-button color="accent">Clear Options</button>
+                <button mat-raised-button color="primary" (click) = "LoadPersonalInfo()" >Next</button>
+            </div>
+        </mat-card>    
+    </div>
+
+
 </div>
+
+<div class="footer">
+   
+        <mat-toolbar > rrrr</mat-toolbar>
+      
+</div>
+
 

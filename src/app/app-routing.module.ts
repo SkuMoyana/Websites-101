@@ -8,6 +8,7 @@ const routes: Routes = [
   {path: 'home', component: PageComponent, data: {page: 'home'}},
   {path: 'about', component: PageComponent, data: {page: 'about'}},
   {path: 'contact', component: PageComponent, data: {page: 'contact'}},
+  {path: 'personalInformation', component: PageComponent, data: {page: 'personalInformation'}},
   {path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 

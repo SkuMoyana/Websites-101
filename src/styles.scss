@@ -8,14 +8,15 @@ html, app-root {
 
 
 .footer{
-  position: relative;
+  position: bottom;
   z-index: 1;
   overflow-x: auto;
    display: flex;
   flex-direction: row;
+ margin-bottom: 0;
  }
 
  body{
-   display:flex;
+   display:block;
    flex-direction: row;
  }

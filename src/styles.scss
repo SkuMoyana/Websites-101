@@ -2,21 +2,19 @@
  
 html, app-root {
   width: 100%;
- 
+ height: 100%;
   margin: 0;
 }
 
 
 .footer{
-  position: bottom;
-  z-index: 1;
-  overflow-x: auto;
-   display: flex;
-  flex-direction: row;
- margin-bottom: 0;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  opacity: 0.8;
  }
 
  body{
-   display:block;
-   flex-direction: row;
+  
  }

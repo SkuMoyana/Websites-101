@@ -4,7 +4,8 @@
     overflow-x: auto;
      display: flex;
     flex-direction: row;
-    
+    opacity: 0.8;
+    background-color:black;
   }
   
   mat-toolbar-row {
@@ -28,4 +29,6 @@
    height: 52px;
  }
 
- 
+ a{
+  color:white;
+ }

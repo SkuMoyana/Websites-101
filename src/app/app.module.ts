@@ -15,13 +15,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { FullpageDirective } from './shared/directives/fullpage.directive';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PageComponent,
-    FullpageDirective
+    FullpageDirective,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

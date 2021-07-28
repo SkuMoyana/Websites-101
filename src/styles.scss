@@ -6,6 +6,12 @@ html, app-root {
   margin: 0;
 }
 
+.fullBg{
+  z-index:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 .footer{
   bottom: 0;

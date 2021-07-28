@@ -9,6 +9,7 @@ export class ContactComponent implements OnInit {
 
   constructor() { }
 
+  image : string = 'assets/bg1.jpg';
   ngOnInit(): void {
   }
 

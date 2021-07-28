@@ -17,7 +17,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
-
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -41,7 +41,8 @@ import { AboutComponent } from './about/about.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+    MatIconModule
    
   ],
   providers: [ContentService],

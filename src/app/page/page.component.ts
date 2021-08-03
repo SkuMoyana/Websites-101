@@ -18,6 +18,10 @@ export class PageComponent implements OnInit {
     services : ['','']
   };
 
+  linuxImage = 'assets/linux.png';
+  cloudImage = 'assets/cloud.png';
+  enterpriseImage = 'assets/enterprise.png';
+
   constructor(private route: ActivatedRoute,
     private contentService: ContentService) { }
 
@@ -27,11 +31,11 @@ export class PageComponent implements OnInit {
   }
 
   LoadPersonalInfo(){
-    this.page = {title:'Your Information', subtitle : 'Tell us about yourself', content:'Your Info', image:'assets/bg1.jpg', services : []};
+    this.page = {title:'Your Information', subtitle : 'Tell us about yourself', content:'Your Info', image:'assets/bgg.jpg', services : []};
   }
   
   LoadHomePage(){
-    this.page = {title: 'Our Services', subtitle: 'Welcome Home!', content: 'Some home content.', image: 'assets/bg1.jpg', services : ['service1','service2','service3']};
+    this.page = {title: 'Our Services', subtitle: 'Welcome Home!', content: 'Some home content.', image: 'assets/bgg.jpg', services : ['service1','service2','service3']};
   }
 
 

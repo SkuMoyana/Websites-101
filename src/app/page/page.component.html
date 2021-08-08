@@ -1,75 +1,91 @@
 <img class="fullBg" appFullpage [src]="page.image">
-
-<div class="card">
-    <mat-card class="sidebar">
-      <h1>
-        Who we are
-      </h1>
-      <p>
-     nimboAge is a US$14.3 billion technology, engineering, construction and
-     manufacturing and financial services conglomerate. It addresses critical needs in key
-    sectors including infrastructure, construction, hydrocarbon, power, defence and
-    aerospace. Its footprint extends across seven countries in addition to India.
-      </p>
-      <mat-divider></mat-divider>
-      <h1>
-        History
-      </h1>
-
-      <p>
-        The evolution of nimboAge into a major engineering and construction organisation is among
-        the more remarkable success stories in Indian industry. It was founded in Mumbai (then
-        Bombay) in 1938 by two Danish engineers, Henning Holck-Larsen and Soren Kristian
-        Toubro. Beginning with the import of machinery from Europe, L&T took on engineering
-        and construction assignments of increasing sophistication. Today, the company sets
-        engineering benchmarks in terms of scale and complexity
-      </p>
-      <mat-divider></mat-divider>
-      <h1>
-        Corporate Sustainability   
-      </h1>
-
-      <p>
-        nimboAge was the first company in India in the engineering & construction space to publicly
-        disclose its sustainability performance. The Company’s annual Sustainability Reports
-        highlight achievements and objectives across the traditional three ‘Ps’ of Planet, People
-        and Profits. All our Reports are rated A+ by Global Reporting Initiatives, indicating the
-        highest level of disclosure.
-      </p>
-
-      <mat-divider></mat-divider>
-
-      
-
-    
-    </mat-card>
-  </div>
-
-
-
-
-<div class="card">
+<div>
     <div *ngIf="page.title==='Our Services'">
-        <mat-card >
-            <mat-card-header class="mat-card-header">
-            <mat-card-title><h1>{{page.title}}</h1></mat-card-title>
-            <mat-card-subtitle>{{page.subtitle}}</mat-card-subtitle>
+      <mat-card class="descrpt-card">
+        <h2>
+          Make the forecast cloudy with a chance of awesomeness! Our state of the art virtual hosting environment means more scalability, more redundancy and minimal downtime in the event of errors.
+        </h2>
+      </mat-card>
+     
+      <div class = "row">
+        <div class="col-4 card-data">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Linux Web Hosting</mat-card-title>
+              <mat-card-subtitle>Affordable, stable locally hosted linux packages</mat-card-subtitle>
             </mat-card-header>
-            <mat-card-content class="mat-card-content" >
-                <mat-selection-list #shoes>
-                    <mat-list-option *ngFor="let service of page.services">
-                        {{service}}
-                        <mat-divider></mat-divider>
-                    </mat-list-option>
-                    
-                  </mat-selection-list>
+            <img mat-card-image src="{{linuxImage}}" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <h3>Features</h3>
+              <mat-list>
+                <mat-list-item> 4GB Web Traffic	 </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> 100GB HDD Size </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> 1 vCPUs </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> 29c/GB  Data transfer overage </mat-list-item>
+                <mat-divider></mat-divider>
+               </mat-list>
             </mat-card-content>
-    
-            <div class="example-button-row">
-                <button mat-raised-button color="primary" (click) = "LoadPersonalInfo()" >Next</button>
-              </div>
-            </mat-card>    
-           
+            <mat-card-actions>
+              <button class="primary-button" mat-raised-button>NEXT</button>
+            </mat-card-actions>
+          </mat-card>
+      
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Cloud Hosting</mat-card-title>
+              <mat-card-subtitle>Dedicated hosting at a fraction of the cost</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src= "{{cloudImage}}" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <h3>Features</h3>
+              <mat-list>
+                <mat-list-item> 4GB Web Traffic	 </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> 200GB HDD Size </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> 2 vCPUs </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> 29c/GB  Data transfer overage </mat-list-item>
+                <mat-divider></mat-divider>
+               </mat-list>
+            </mat-card-content>
+            <mat-card-actions>
+              <button class="primary-button" mat-raised-button>NEXT</button>
+            </mat-card-actions>
+          </mat-card>
+      
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Specialised Hosting</mat-card-title>
+              <mat-card-subtitle>Start your own hosting enterprise</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="{{enterpriseImage}}" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <h3>Features</h3>
+              <mat-list>
+                <mat-list-item> 6GB Web Traffic	 </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> 400GB HDD Size </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> 4 vCPUs </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item> 29c/GB  Data transfer overage </mat-list-item>
+                <mat-divider></mat-divider>
+               </mat-list>
+            </mat-card-content>
+            <mat-card-actions>
+              <button class="primary-button" mat-raised-button>NEXT</button>
+            </mat-card-actions>
+          </mat-card>
+      
+        </div>
+      </div>
     </div>
 
     <div *ngIf="page.title==='Your Information'">

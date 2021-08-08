@@ -4,8 +4,9 @@
     overflow-x: auto;
      display: flex;
     flex-direction: row;
-    background-color:#117fae;
+    background-color :white;
     border: black;
+    opacity: 0.9;
   }
   
   mat-toolbar-row {
@@ -19,7 +20,6 @@
  
   h1 {
     margin: 0;
-    background-color: lightblue;
   }
   
   h1 .light {
@@ -31,5 +31,5 @@
  }
 
  a{
-  color:white;
+  color: #117fae;
  }
